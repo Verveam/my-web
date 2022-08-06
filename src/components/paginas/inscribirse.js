@@ -21,7 +21,7 @@ const FormValidation = () => {
 
     return(
         <>
-            <h2>FormValidation</h2>
+            <h2>INGRESE SUS DATOS</h2>
 
             <form onSubmit={ handleSubmit(customSubmit) } className='form-react'>
 
@@ -61,6 +61,23 @@ const FormValidation = () => {
                     <div className='form-control'>
                         <input {...register('prueba')} style={{backgroundColor:colorInput }} />
                     </div>
+                    <legend>GENERO</legend>
+                    <label>
+                        MASCULINO
+                        <input type= "radio"
+                                name= "genero"
+                                value={'m'}
+                                onChange={event => this.valueToState(event.target)}/>
+                    </label>
+                    
+                    <label>
+                        FEMENINO
+                        <input type= "radio"
+                                name= "genero"
+                                value={'f'}
+                                onChange={event => this.valueToState(event.target)}/>
+                    </label>
+
 
                 <button type='submit'>Send</button>
                 

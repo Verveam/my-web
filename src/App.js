@@ -2,8 +2,9 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './components/Form.css';
-import styled from 'styled-components'
-//import FormValidation from './components/FormValidation';
+import styled from 'styled-components';
+
+
 //importamos los componentes creados
 
 import About from './components/paginas/about';
@@ -14,8 +15,9 @@ import NavBarExample from './layouts/navbar';
 
 function App() {
   return (
+    
     <main>
-    <div className="conteiner">
+    <div className="conteiner" >
       
         <BrowserRouter>
 
@@ -31,14 +33,21 @@ function App() {
             <Route path='*' element={ <Navigate replace to="/" /> }/>
 
           </Route>
-
+          
         </Routes>
-
+        
   </BrowserRouter>
+  
+            <b>Copyright&copy;Circulo 2022. </b>
+    
     </div>
+    
     </main>
+    
   );
+
 }
+
 
 
 

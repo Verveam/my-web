@@ -1,4 +1,6 @@
 import React from "react"
+import styled from 'styled-components';
+
 
 import bootstrap from "bootstrap/dist/css/bootstrap.min.css";
 
@@ -7,8 +9,8 @@ const about = () => {
     return(
         <>
         <h1> lista </h1>
-        <table className="table table-sm">
-            <thead className="table-warning">
+        <Table className="table table-sm">
+            <thead className="table-primary">
                 <tr>
                     <th>ID</th>
                     <th>nombre</th>
@@ -82,9 +84,16 @@ const about = () => {
                     <td>2120,°°</td>
                 </tr>
             </tbody>
-        </table>
+        </Table>
         
         </>
     )
 }
 export default about
+
+const  Table = styled.table`
+    margin-left: 150px;
+    position: relative;
+    width: 80%;
+        
+`;

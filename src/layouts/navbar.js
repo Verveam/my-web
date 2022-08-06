@@ -13,7 +13,7 @@ const NavBarExample = () => {
         <Navbar className="navBg" variant="red" expand="lg">
         <div className="mx-4">
             
-            <img src="../CIRCULO.png"  width="100"></img><h1>CIRCULO</h1></div>
+            <img src="../CIRCULO.png"  width="100"></img><h1><b>CIRCULO</b></h1></div>
             
                 <Navbar.Brand as={Link} to="/" ><i className="fa-solid fa-screwdriver-wrench "></i><i class="fa-solid fa-cat"></i></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -33,13 +33,15 @@ section {
 .fa-cat {
   color: #0f0f0f;
   padding: 20px;
-  font-size: 60px;
+  font-size: 100px;
   
 }
 
 .table {
-  background: linear-gradient(90deg, rgb(200, 149, 132) 0%, rgb(169, 144, 106) 60%);
+  background: linear-gradient(90deg, rgb(168, 210, 225) 40%, rgb(79, 157, 193) 80%);
 }
+
+
 
 body{
   
@@ -53,6 +55,8 @@ main{
   overflow: hidden;
 
 }
+
+
 
 
 

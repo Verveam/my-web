@@ -63,6 +63,7 @@ const Home = () => {
         
         <ContenedorPrincipal>
             <Titulo>PRODUCTOS DESTACADOS</Titulo>
+            
             <ContenedorSlideshow ref={slideshow}>
             <Slide>
                     <a href="">
@@ -97,6 +98,7 @@ const Home = () => {
                     </TextoSlide>
                 </Slide>
             </ContenedorSlideshow>
+            <p className='container'><B>¡HOLA!  Le damos la bienvenida es este pequeño emprendimiento iniciado no hace mucho, por que queremos ofrecerles el mejor servicio tanto en su domicilio como en nuestro local.</B></p>
             <Controles>
                 <Boton onClick={anterior}>
                     <FlechaIzquierda/>
@@ -105,9 +107,18 @@ const Home = () => {
                     <FlechaDerecha/>
                 </Boton>
             </Controles>
+            
         </ContenedorPrincipal>
+    
     )
+    
+    
 }
+
+const B = styled.b`
+    font-size: 25px;
+
+`;
 
 
 const Titulo = styled.p`
@@ -174,7 +185,7 @@ const Boton = styled.button`
     cursor: pointer;
     outline: none;
     
-    height: 290px;
+    height: 400px;
     text-align: center;
     position: absolute;
     transition: .3s ease all;
